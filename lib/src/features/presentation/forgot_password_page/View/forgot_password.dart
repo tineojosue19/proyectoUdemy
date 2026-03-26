@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udemyyyyy/src/features/presentation/commons_widgets/header_text.dart';
 
 class ForgotPassword extends StatelessWidget {
   const ForgotPassword({super.key});
@@ -17,14 +18,7 @@ class ForgotPassword extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text(
-                'Forgot Password?',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 30.0,
-                ),
-              ),
+              headerText('Forgot Password?', Colors.black, FontWeight.bold, 30.0),
               Container(
                 padding: const EdgeInsets.all(10.0),
                 child: const Text(
@@ -116,11 +110,7 @@ void _showAlert( BuildContext context ) {
               ),
               Container(
                 margin: EdgeInsets.all(15.0),
-                child: Text('Your password has been sent',
-                style: TextStyle(
-                  color: Theme.of(context).primaryColor,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20.0)),
+                child: headerText('Your password has been sent', Theme.of(context).primaryColor, FontWeight.bold, 20.0)
               ),
               Container (
                 margin: EdgeInsets.all(15.0),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:udemyyyyy/src/colors/colors.dart';
-import 'package:udemyyyyy/src/features/presentation/widgets/back_button.dart';
+import 'package:udemyyyyy/src/features/presentation/commons_widgets/back_button.dart';
+import 'package:udemyyyyy/src/features/presentation/commons_widgets/header_text.dart';
 
 class SingUpPage extends StatelessWidget {
   const SingUpPage({super.key});
@@ -20,12 +21,7 @@ class SingUpPage extends StatelessWidget {
           padding: EdgeInsets.all(30),
           child: Column(
             children: [
-              const Text(
-                'Create an account',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 30.0,),),
+              headerText('Create an account', Colors.black, FontWeight.bold, 30.0),
                   _usernameinput(context),
                   _emailinput(context),
                   _phoneinput(context),

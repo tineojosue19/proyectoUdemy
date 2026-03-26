@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../login_page/View/login_page.dart';
 import 'dart:ui';
-
+import 'package:udemyyyyy/src/features/presentation/commons_widgets/header_text.dart';
 import 'package:flutter/services.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -31,7 +31,7 @@ class WelcomePage extends StatelessWidget {
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
               child: Container(
-                color: Colors.black.withOpacity(0.3),
+                color: Colors.black.withValues(alpha: 0.5),
               ),
             ),
           ),
@@ -41,14 +41,7 @@ class WelcomePage extends StatelessWidget {
             children: [
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 50.0),
-                child: Text(
-                  'DELIVERED FAST FOOD TO YOUR DOOR',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 45.0,
-                  ),
-                ),
+                child: headerText('DELIVERED FAST FOOD TO YOUR DOOR', Colors.white, FontWeight.bold, 45.0),
               ),
 
               Container(

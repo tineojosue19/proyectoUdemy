@@ -7,8 +7,6 @@ import 'package:udemyyyyy/src/features/presentation/sing_up_page/View/sing_up_pa
 import 'package:udemyyyyy/src/features/presentation/tabs/tabs_page.dart';
 
 
-import '../features/presentation/login_page/View/login_page.dart';
-
 final routes = <String,WidgetBuilder> {
   'welcome' : (BuildContext context) => WelcomePage(),
   'login' : (BuildContext context) => LoginPage(),
